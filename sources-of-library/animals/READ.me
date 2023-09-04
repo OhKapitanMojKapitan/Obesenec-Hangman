@@ -1,0 +1,3 @@
+#List of animals:
+https://gist.github.com/atduskgreg/3cf8ef48cb0d29cf151bedad81553a54
+grep -v ^[a-z] animals.txt | sed 's/(/-/g' | sed 's/).*$//g' | grep -v 'Common\|Animals' | sed 's/  */ /g' | sed 's/ /_/g' | sort -u | sed 's/_-/-/g' | sed 's/\([^a-zA-Z]\)_/\1/g' > animal_corrected.txt

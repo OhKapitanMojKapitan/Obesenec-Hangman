@@ -1,0 +1,13 @@
+cat ~/Git_notExactlyHub/comparison/sources-of-library/*/*_corrected.txt | sort -u > ~/Git_notExactlyHub/comparison/sources-of-library/all/all.txt
+#List of animals:
+https://gist.github.com/atduskgreg/3cf8ef48cb0d29cf151bedad81553a54
+grep -v ^[a-z] animals.txt | sed 's/(/-/g' | sed 's/).*$//g' | grep -v 'Common\|Animals' | sed 's/  */ /g' | sed 's/ /_/g' | sort -u | sed 's/_-/-/g' | sed 's/\([^a-zA-Z]\)_/\1/g' > animal_corrected.txt
+#Zdroj-Source:
+https://github.com/scrollmapper/bible_databases_deuterocanonical.git
+#unzip in to the folder 
+#make a complete list of acceptable words
+find /absoluteadresstillTXTfolder/txt/ -name "*.txt" -type f | sed 's/ /\\ /g' | awk '{print "cat "$0}' | bash | cut -c 8- | sed 's/[^a-zA-Z ]//g' | sed 's/  */ /g' | tr " " "\n" | grep -v [A-Z] | sort -u | grep -v ^[ivxlcdm][ivxlcdm]*$ | grep -v '^.$\|^..$'
+#save in to the HolyBible-WordList.txt
+find ~/Git_notExactlyHub/comparison/sources-of-library/SvatePismo-HolyBible/bible_databases_deuterocanonical-master/txt/ -name "*.txt" -type f | sed 's/ /\\ /g' | awk '{print "cat "$0}' | bash | cut -c 8- | sed 's/[^a-zA-Z ]//g' | sed 's/  */ /g' | tr " " "\n" | grep -v [A-Z] | sort -u | grep -v ^[ivxlcdm][ivxlcdm]*$ | grep -v '^.$\|^..$' > ~/Git_notExactlyHub/comparison/sources-of-library/SvatePismo-HolyBible/HolyBible-WordList_corrected.txt
+https://www-personal.umich.edu/~jlawler/wordlist
+cat www-personal.umich.edu_~jlawler_wordlist.txt| sed 's/[^a-zA-Z-]//g'| grep -v '^$\|-' > wordlist-personalumichedu_corrected.txt

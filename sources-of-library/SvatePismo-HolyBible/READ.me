@@ -1,0 +1,7 @@
+#Zdroj-Source:
+https://github.com/scrollmapper/bible_databases_deuterocanonical.git
+#unzip in to the folder 
+#make a complete list of acceptable words
+find /absoluteadresstillTXTfolder/txt/ -name "*.txt" -type f | sed 's/ /\\ /g' | awk '{print "cat "$0}' | bash | cut -c 8- | sed 's/[^a-zA-Z ]//g' | sed 's/  */ /g' | tr " " "\n" | grep -v [A-Z] | sort -u | grep -v ^[ivxlcdm][ivxlcdm]*$ | grep -v '^.$\|^..$'
+#save in to the HolyBible-WordList.txt
+find ~/Git_notExactlyHub/comparison/sources-of-library/SvatePismo-HolyBible/bible_databases_deuterocanonical-master/txt/ -name "*.txt" -type f | sed 's/ /\\ /g' | awk '{print "cat "$0}' | bash | cut -c 8- | sed 's/[^a-zA-Z ]//g' | sed 's/  */ /g' | tr " " "\n" | grep -v [A-Z] | sort -u | grep -v ^[ivxlcdm][ivxlcdm]*$ | grep -v '^.$\|^..$' > ~/Git_notExactlyHub/comparison/sources-of-library/SvatePismo-HolyBible/HolyBible-WordList_corrected.txt
