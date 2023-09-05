@@ -26,3 +26,5 @@ cat www-personal.umich.edu_~jlawler_wordlist.txt| sed 's/[^a-zA-Z-]//g'| grep -v
 
 # Finished the basic code, with multiple words and checking inputs in script.sh.
 # Creating a textfile with grafical presentation of hanging procedure in hangman.txt.
+# For full working experience you need:
+# script.sh, hangman.txt, and ./sources-of-library/all/all.txt
