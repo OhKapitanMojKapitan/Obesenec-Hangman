@@ -1,0 +1,89 @@
+1  
+   
+ 
+ 
+ 
+ 
+ 
+
+2  
+   
+ 
+ 
+
+ 
+ _______________
+/xXXXXXXXXXXXXXx\
+4  
+   
+ 
+  _      
+ |X|        
+ |X|       
+ |X|____________
+/xXXXXXXXXXXXXXx\
+3  
+   
+ 
+ 
+ 
+ 
+ _______________
+/xXXXXXXXXXXXXXx\
+5  
+  _ 
+ |X|        
+ |X|      
+ |X|        
+ |X|       
+ |X|____________
+/xXXXXXXXXXXXXXx\
+6  _
+  //         
+ /X|        
+ |X|    
+ |X|        
+ |X|       
+ |X|____________
+/xXXXXXXXXXXXXXx\
+7  __________
+  //         
+ /X|        
+ |X|      
+ |X|      
+ |X|       
+ |X|____________
+/xXXXXXXXXXXXXXx\
+8  __________
+  //        | 
+ /X|        |
+ |X|        O
+ |X|        
+ |X|       ___
+ |X|_______|_|__
+/xXXXXXXXXXXXXXx\
+9  __________
+  //        | 
+ /X|        |
+ |X|      \(O)_
+ |X|        H
+ |X|       _M_
+ |X|_______|_|__
+/xXXXXXXXXXXXXXx\
+10 __________
+  //        | 
+ /X|        |
+ |X|      <(O)>
+ |X|        H
+ |X|       / \
+ |X|____________
+/xXXXXXXXXXXXXXx\
+11 __________
+  //        | 
+ /X|        |
+ |X|       (O)
+ |X|       |H|
+ |X|        X  
+ |X|____________
+/xXXXXXXXXXXXXXx\
+

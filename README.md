@@ -23,3 +23,6 @@ cat www-personal.umich.edu_~jlawler_wordlist.txt| sed 's/[^a-zA-Z-]//g'| grep -v
 #Make central wordlist of all words:
 # Put all the results in one place.
 # 1.3. cat ~/Git_notExactlyHub/comparison/sources-of-library/*/*_corrected.txt | sort -u > ~/Git_notExactlyHub/comparison/sources-of-library/all/all.txt
+
+# Finished the basic code, with multiple words and checking inputs in script.sh.
+# Creating a textfile with grafical presentation of hanging procedure in hangman.txt.
